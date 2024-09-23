@@ -1,0 +1,315 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.3em;
+}
+
+#navbar {
+    background-color: rgb(135, 10, 135);
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    font-size: 1.3em;
+    
+}
+
+li:hover {
+    background-color: burlywood;
+    cursor: url("glove\ mouse.cur"), auto;
+    transform: scale(1.5);
+}
+
+#welcome-section {
+    top: 0;
+    min-height: 40rem;
+    margin-top: 4rem;
+    background-color: rgb(62, 10, 62);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#welcome-section > h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.2em;
+    color: rgb(244, 238, 238);
+    text-shadow: 4px 4px #000000;
+}
+
+#welcome-section > p {
+    text-align: center;
+    font-size: 1.6em;
+    
+}
+
+#mypicture {
+    position: relative;
+    border-radius: 50%;
+    max-width: 20rem;
+    margin: 0 auto;
+}
+
+#projects {
+    min-height: 35rem;
+    background-color: rgb(9, 7, 119);
+    
+}
+
+#pa {
+    max-width: 30%;
+    line-height: 1.5em;
+    color: rgb(223, 231, 237);
+    font-size: 1.5em;
+    margin-left: 4rem;
+    margin-top: 8rem;
+    float: left;
+    display: inline;
+}
+
+.image-container {
+    display: grid;
+    gap: 2rem;
+    
+}
+
+.image-container > figure:first-child {
+    
+    margin-top: 7rem;
+    margin-left: 21.5rem;
+}
+
+.better-container > figure:nth-child(1) {
+    grid-row: 1;
+    
+}
+.better-container > figure:nth-child(2) {
+    grid-row: 1 / span 2;
+    
+    
+}
+
+.better-container {
+    display: grid;
+    margin-top: 5rem;
+    gap: 10rem;
+}
+
+figure > img {
+    display: inline;
+    min-height: 25rem;
+    max-width: 30rem;
+    max-height: 25rem;
+    object-fit: cover;
+}
+
+figcaption {
+    color: white;
+    font-style: italic;
+    text-align: center;
+    max-width: 30rem;
+    border: 1px ridge transparent;
+    background-color: rgb(16, 15, 15);
+}
+
+#contact {
+    min-height: 35rem;
+    background-color: rgb(228, 170, 9);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.4em;
+}
+
+#contact > h3 {
+    font-size: 1.6em;
+    color: rgb(0, 0, 0);
+}
+
+#social {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+ a {
+    text-decoration: none;
+    color: white;
+}
+
+ a:hover {
+   color: white;
+   cursor: url("glove\ mouse.cur"), auto;
+   transform: scale(1.5);
+   animation-duration: 0.5s;
+}
+
+footer {
+    background-color: mediumvioletred;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+   body {
+    flex-wrap: wrap;
+    max-width: 23.5rem;
+    box-sizing: border-box;
+   }
+
+   #projects {
+    width: 100%
+   }
+
+    #pa {
+        display:block;
+        margin: 0;
+        width: 100%
+    }
+
+
+    figure > img {
+        display: block;
+        object-fit: cover;
+        width: 100%
+    }
+
+
+    #navbar {
+       max-width: 23.5rem;
+       margin: 0;
+       display: flex;
+       flex-wrap: nowrap; 
+       position: fixed;
+       top: 0;
+       width: 100%;
+       overflow: hidden;
+       
+    }
+
+    ul {
+        gap: 1.5rem;
+    }
+
+    main {
+        margin-top: 6rem;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .image-container {
+        display: inline-block;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    .image-container > figure:first-child {
+        margin: 0;
+        width: 100%;
+       
+    }
+    
+
+    .better-container > figure {
+        margin: 0;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+ 
+    
+    .better-container {
+        display: block;
+        margin-top: 5rem;
+        gap: 10rem;
+    }
+
+
+    #projects {
+        
+        width: 100%;
+        
+    }
+
+    #pa {
+        max-width: 23rem;
+       
+    }
+
+    #footer {
+        max-width: 23rem;
+        overflow: hidden;
+       
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+
+    #bistro {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 1100px) {
+    .image-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-left: 0;
+        width: 30%;
+    }
+  
+   #first {
+    margin-left: 10rem;
+   }
+
+
+
+    #bistro {
+       margin: 0;
+       padding-right: 25rem;
+    }
+     
+    .better-container {
+        display: block;
+        margin-top: 5rem;
+        gap: 10rem;
+        width: 50%;
+    }
+
+    #pa {
+        display:inline;
+        margin-left: 1rem;
+        width: 100%;
+        float: left;
+    }
+
+    figcaption {
+        text-align: center;
+        margin-left: 1rem;
+    }
+    
+   
+}
